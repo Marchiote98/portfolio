@@ -3,218 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafael Marchiote — Automação & Agentes de IA</title>
-  <meta name="description" content="Portfólio técnico de Rafael Marchiote — desenvolvedor de software, automação de processos e agentes de IA.">
+  <meta name="theme-color" content="#f9ead2">
+  <title>Rafael Marchiote | Automação e Agentes de IA</title>
+  <meta name="description" content="Portfólio técnico de Rafael Marchiote: desenvolvedor de software, automação de processos e agentes de IA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="site-header">
-    <div class="wrap header-inner">
-      <span class="brand">RAFAEL<span class="accent">.DEV</span></span>
-      <nav class="main-nav">
-        <a href="#stack">Stack</a>
+    <div class="bar">
+      <a class="brand" href="#sobre">RAFAEL MARCHIOTE</a>
+      <nav class="main-nav" aria-label="Seções">
+        <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
         <a href="#trajetoria">Trajetória</a>
-        <a href="#contato">Contato</a>
+        <a href="#contato" class="pill">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero wrap">
-      <div class="hero-photo">
-        <div class="photo-frame">
-          <img src="assets/foto.jpg" alt="Foto de Rafael Marchiote" onerror="this.parentElement.classList.add('photo-fallback')">
-          <span class="photo-fallback-text">RM</span>
-        </div>
-        <div class="photo-footer">
-          <p class="fig-caption"><span class="status-dot"></span> status: <span class="accent">online</span></p>
-          <div class="term-bar"><span></span><span></span><span></span></div>
-        </div>
-      </div>
+  <div class="layout">
+    <main>
 
-      <div class="hero-content">
-        <h1>Rafael Marchiote</h1>
-        <p class="subtitle">Ciência da Computação <span class="accent">→</span> Automação &amp; Agentes de IA</p>
-        <p class="bio">
-          Estudante de Ciência da Computação e desenvolvedor de software, focado em automação de processos
-          e agentes de Inteligência Artificial. Construo soluções de ponta a ponta &mdash; de fluxos no Power Platform
-          a agentes de IA que executam tarefas reais &mdash; integrando sistemas via API, banco de dados e automação.
-        </p>
-        <div class="cta-row">
-          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-          <a href="https://github.com/Marchiote98" class="btn" target="_blank" rel="noopener">GitHub</a>
-          <a href="#contato" class="btn">Contato</a>
-        </div>
-      </div>
-    </section>
+      <!-- SOBRE -->
+      <section id="sobre" class="hero-card">
+        <svg class="hero-art" viewBox="0 0 220 170" role="img" aria-label="Ilustração de um notebook com código e balões de conversa">
+          <circle cx="110" cy="88" r="66" fill="#f8cfae"/>
+          <!-- balão de código -->
+          <rect x="146" y="22" width="48" height="32" rx="9" fill="#bfe0f4" stroke="#3e2b20" stroke-width="2.5"/>
+          <path d="M156 54 l-2 11 l12 -11 z" fill="#bfe0f4" stroke="#3e2b20" stroke-width="2.5" stroke-linejoin="round"/>
+          <polyline points="164,32 158,38 164,44" fill="none" stroke="#3e2b20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="176,32 182,38 176,44" fill="none" stroke="#3e2b20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- balão de conversa -->
+          <rect x="18" y="38" width="42" height="28" rx="9" fill="#c2e8d6" stroke="#3e2b20" stroke-width="2.5"/>
+          <path d="M28 66 l-3 11 l13 -11 z" fill="#c2e8d6" stroke="#3e2b20" stroke-width="2.5" stroke-linejoin="round"/>
+          <circle cx="31" cy="52" r="2.6" fill="#3e2b20"/>
+          <circle cx="39" cy="52" r="2.6" fill="#3e2b20"/>
+          <circle cx="47" cy="52" r="2.6" fill="#3e2b20"/>
+          <!-- notebook -->
+          <rect x="58" y="74" width="104" height="66" rx="8" fill="#fffaf0" stroke="#3e2b20" stroke-width="3"/>
+          <rect x="68" y="84" width="34" height="5" rx="2.5" fill="#7fc8a9"/>
+          <rect x="68" y="96" width="60" height="5" rx="2.5" fill="#f0a87a"/>
+          <rect x="80" y="108" width="44" height="5" rx="2.5" fill="#8cc7ea"/>
+          <rect x="68" y="120" width="28" height="5" rx="2.5" fill="#7fc8a9"/>
+          <path d="M42 140 h136 a4 4 0 0 1 0 8 h-136 a4 4 0 0 1 0 -8 z" fill="#3e2b20"/>
+        </svg>
 
-    <!-- STACK -->
-    <section id="stack" class="section wrap">
-      <div class="section-heading">
-        <h2>Stack</h2>
-      </div>
+        <div class="hero-text">
+          <h1>Oi, eu sou o Rafael!</h1>
+          <p class="subtitle">Ciência da Computação &rarr; Automação &amp; Agentes de IA</p>
+          <p class="bio">
+            Estudante de Ciência da Computação e desenvolvedor de software, focado em automação de processos
+            e agentes de Inteligência Artificial. Construo soluções de ponta a ponta, de fluxos no Power Platform
+            a agentes de IA que executam tarefas reais, integrando sistemas via API, banco de dados e automação.
+          </p>
+          <div class="cta-row">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="https://github.com/Marchiote98" class="btn" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </section>
 
-      <div class="stack-list">
-        <div class="stack-row">
-          <span class="stack-label">Automação &amp; integração</span>
-          <span class="stack-items">n8n · Power Automate · Webhooks · SharePoint</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-label">Low-code &amp; apps</span>
-          <span class="stack-items">Power Platform · Microsoft Access</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-label">Linguagens &amp; dados</span>
-          <span class="stack-items">SQL · C# · JavaScript · Python</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-label">IA &amp; agentes</span>
-          <span class="stack-items">Agentes de IA · Claude Code · LLM · automação de tarefas</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-label">Ferramentas</span>
-          <span class="stack-items">Git · VS Code · VBA</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJETOS -->
-    <section id="projetos" class="section wrap">
-      <div class="section-heading">
+      <!-- PROJETOS -->
+      <section id="projetos" class="block">
         <h2>Projetos</h2>
-      </div>
 
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-status">CONCLUÍDO</p>
-          <h3>Motor de Cálculo de Aposentadoria</h3>
-          <p class="project-desc">Sistema desktop para um sindicato de servidores públicos: cadastra servidores e dependentes, e calcula tempo de contribuição (idade, tempo público/privado, averbação, licença) pra apontar se o servidor já pode se aposentar ou quanto tempo falta. Gera automaticamente o documento oficial via mala direta.</p>
-          <div class="tag-row">
-            <span class="tag">Access</span>
-            <span class="tag">VBA</span>
-            <span class="tag">SQL Server</span>
+        <div class="project-grid">
+          <article class="project-card c-peach">
+            <div class="card-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </span>
+              <span class="status">Concluído</span>
+            </div>
+            <h3>Motor de Cálculo de Aposentadoria</h3>
+            <p class="project-desc">Sistema desktop para um sindicato de servidores públicos: cadastra servidores e dependentes, e calcula tempo de contribuição (idade, tempo público/privado, averbação, licença) pra apontar se o servidor já pode se aposentar ou quanto tempo falta. Gera automaticamente o documento oficial via mala direta.</p>
+            <div class="tag-row">
+              <span class="tag">Access</span>
+              <span class="tag">VBA</span>
+              <span class="tag">SQL Server</span>
+            </div>
+            <a href="https://github.com/Marchiote98/sindical-aposentadoria" class="project-link" target="_blank" rel="noopener">Ver repositório &rarr;</a>
+          </article>
+
+          <article class="project-card c-mint">
+            <div class="card-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </span>
+              <span class="status">Concluído</span>
+            </div>
+            <h3>App de Questionários</h3>
+            <p class="project-desc">Meu primeiro projeto em Power Apps: app mobile pra criação de questionários vinculados a propriedades, com sincronização online/offline. Os usuários respondem com frequência, podendo enviar mais de uma resposta ao longo do tempo, e consultam separadamente o histórico do que já responderam.</p>
+            <div class="tag-row">
+              <span class="tag">Power Apps</span>
+              <span class="tag">Mobile</span>
+              <span class="tag">Sincronização offline</span>
+            </div>
+          </article>
+
+          <article class="project-card c-sand">
+            <div class="card-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+              </span>
+              <span class="status">Concluído</span>
+            </div>
+            <h3>Aluguel de Roupas Juninas</h3>
+            <p class="project-desc">Aplicação desktop pra gestão de aluguel de roupas típicas: catálogo com cadastro/remoção de peças e ajuste de valor, controle de disponibilidade por data (quando foi alugada e quando será devolvida) e caixa que soma automaticamente o total recebido por forma de pagamento.</p>
+            <div class="tag-row">
+              <span class="tag">C#</span>
+              <span class="tag">Windows Forms</span>
+              <span class="tag">SQLite</span>
+            </div>
+            <a href="https://github.com/Marchiote98/AluguelRoupasJuninas" class="project-link" target="_blank" rel="noopener">Ver repositório &rarr;</a>
+          </article>
+
+          <article class="project-card c-sky">
+            <div class="card-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </span>
+              <span class="status">Concluído</span>
+            </div>
+            <h3>Sistema de Gestão de Chamados</h3>
+            <p class="project-desc">Atualização de layout: entrei num sistema de chamados (Power Apps) já em produção no setor público pra deixar a interface mais limpa e moderna, sem mexer no que já funcionava por baixo (integração com SharePoint e Power Automate, fluxo de aprovação, notificação por e-mail e deep link pro chamado). Também trabalhamos no chat integrado por chamado, pra comunicação direta entre usuário e administrador.</p>
+            <div class="tag-row">
+              <span class="tag">Power Apps</span>
+              <span class="tag">Power Automate</span>
+              <span class="tag">SharePoint</span>
+            </div>
+          </article>
+
+          <article class="project-card c-peach wide">
+            <div class="card-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </span>
+              <span class="status live">Em produção</span>
+            </div>
+            <h3>Plataforma de Gestão de Solicitações de Comunicação</h3>
+            <p class="project-desc">App canvas com triagem por tipo de solicitação, fluxo de decisão/aprovação e notificações automáticas por e-mail, interface bilíngue (PT/EN) e chat integrado no próprio app pra comunicação direta entre solicitante e equipe.</p>
+            <div class="tag-row">
+              <span class="tag">Power Apps</span>
+              <span class="tag">Power Automate</span>
+              <span class="tag">SharePoint</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- STACK -->
+      <section id="stack" class="block">
+        <h2>Stack</h2>
+
+        <div class="stack-card">
+          <div class="stack-row">
+            <span class="stack-label">Automação &amp; integração</span>
+            <span class="chips"><span class="tag">n8n</span><span class="tag">Power Automate</span><span class="tag">Webhooks</span><span class="tag">SharePoint</span></span>
           </div>
-          <a href="https://github.com/Marchiote98/sindical-aposentadoria" class="project-link" target="_blank" rel="noopener">ver repositório →</a>
-        </article>
-
-        <article class="project-card">
-          <p class="project-status">CONCLUÍDO</p>
-          <h3>App de Questionários</h3>
-          <p class="project-desc">Meu primeiro projeto em Power Apps: app mobile pra criação de questionários vinculados a propriedades, com sincronização online/offline. Os usuários respondem com frequência, podendo enviar mais de uma resposta ao longo do tempo, e consultam separadamente o histórico do que já responderam.</p>
-          <div class="tag-row">
-            <span class="tag">Power Apps</span>
-            <span class="tag">Mobile</span>
-            <span class="tag">Sincronização offline</span>
+          <div class="stack-row">
+            <span class="stack-label">Low-code &amp; apps</span>
+            <span class="chips"><span class="tag">Power Platform</span><span class="tag">Microsoft Access</span></span>
           </div>
-        </article>
-
-        <article class="project-card">
-          <p class="project-status">CONCLUÍDO</p>
-          <h3>Aluguel de Roupas Juninas</h3>
-          <p class="project-desc">Aplicação desktop pra gestão de aluguel de roupas típicas: catálogo com cadastro/remoção de peças e ajuste de valor, controle de disponibilidade por data (quando foi alugada e quando será devolvida) e caixa que soma automaticamente o total recebido por forma de pagamento.</p>
-          <div class="tag-row">
-            <span class="tag">C#</span>
-            <span class="tag">Windows Forms</span>
-            <span class="tag">SQLite</span>
+          <div class="stack-row">
+            <span class="stack-label">Linguagens &amp; dados</span>
+            <span class="chips"><span class="tag">SQL</span><span class="tag">C#</span><span class="tag">JavaScript</span><span class="tag">Python</span></span>
           </div>
-          <a href="https://github.com/Marchiote98/AluguelRoupasJuninas" class="project-link" target="_blank" rel="noopener">ver repositório →</a>
-        </article>
-
-        <article class="project-card">
-          <p class="project-status">CONCLUÍDO</p>
-          <h3>Sistema de Gestão de Chamados</h3>
-          <p class="project-desc">Atualização de layout: entrei num sistema de chamados (Power Apps) já em produção no setor público pra deixar a interface mais limpa e moderna, sem mexer no que já funcionava por baixo (integração com SharePoint e Power Automate, fluxo de aprovação, notificação por e-mail e deep link pro chamado). Também trabalhamos no chat integrado por chamado, pra comunicação direta entre usuário e administrador.</p>
-          <div class="tag-row">
-            <span class="tag">Power Apps</span>
-            <span class="tag">Power Automate</span>
-            <span class="tag">SharePoint</span>
+          <div class="stack-row">
+            <span class="stack-label">IA &amp; agentes</span>
+            <span class="chips"><span class="tag">Agentes de IA</span><span class="tag">Claude Code</span><span class="tag">LLM</span><span class="tag">Automação de tarefas</span></span>
           </div>
-        </article>
-
-        <article class="project-card">
-          <p class="project-status">EM PRODUÇÃO</p>
-          <h3>Plataforma de Gestão de Solicitações de Comunicação</h3>
-          <p class="project-desc">App canvas com triagem por tipo de solicitação, fluxo de decisão/aprovação e notificações automáticas por e-mail, interface bilíngue (PT/EN) e chat integrado no próprio app pra comunicação direta entre solicitante e equipe.</p>
-          <div class="tag-row">
-            <span class="tag">Power Apps</span>
-            <span class="tag">Power Automate</span>
-            <span class="tag">SharePoint</span>
+          <div class="stack-row">
+            <span class="stack-label">Ferramentas</span>
+            <span class="chips"><span class="tag">Git</span><span class="tag">VS Code</span><span class="tag">VBA</span></span>
           </div>
-        </article>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!-- TRAJETORIA -->
-    <section id="trajetoria" class="section wrap">
-      <div class="section-heading">
+      <!-- TRAJETORIA -->
+      <section id="trajetoria" class="block">
         <h2>Trajetória</h2>
+
+        <ol class="timeline">
+          <li>
+            <span class="timeline-tag">Origem</span>
+            <h3>Cursos técnicos (Udemy)</h3>
+            <p>Primeiro contato formal com programação: DBA, lógica de programação e programação orientada a objetos.</p>
+          </li>
+          <li>
+            <span class="timeline-tag">Formação</span>
+            <h3>Ciência da Computação</h3>
+            <p>Formação em curso, aprofundando a base técnica em lógica, banco de dados e desenvolvimento de software.</p>
+          </li>
+          <li>
+            <span class="timeline-tag">Desenvolvimento</span>
+            <h3>Power Platform &amp; automação</h3>
+            <p>Power Apps, Power Automate, SharePoint e SQL aplicados a soluções reais de automação de processos.</p>
+          </li>
+          <li>
+            <span class="timeline-tag">Atual</span>
+            <h3>Agentes de IA &amp; integrações</h3>
+            <p>n8n, Claude Code e agentes de IA que executam tarefas de ponta a ponta, integrando sistemas via API.</p>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <!-- CONTATO / PERFIL -->
+    <aside id="contato" class="profile" aria-label="Perfil e contato">
+      <div class="avatar">
+        <img src="assets/foto.jpg" alt="Foto de Rafael Marchiote" onerror="this.parentElement.classList.add('photo-fallback')">
+        <span class="avatar-fallback">RM</span>
       </div>
+      <h2 class="profile-name">Rafael Marchiote</h2>
+      <p class="profile-role">Desenvolvedor de Software &amp; Automação</p>
 
-      <ol class="timeline">
+      <ul class="link-list">
         <li>
-          <span class="timeline-tag">ORIGEM</span>
-          <h3>Cursos técnicos (Udemy)</h3>
-          <p>Primeiro contato formal com programação: DBA, lógica de programação e programação orientada a objetos.</p>
+          <a href="https://github.com/Marchiote98" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>Marchiote98</span>
+          </a>
         </li>
         <li>
-          <span class="timeline-tag">FORMAÇÃO</span>
-          <h3>Ciência da Computação</h3>
-          <p>Formação em curso, aprofundando a base técnica em lógica, banco de dados e desenvolvimento de software.</p>
+          <a href="https://www.linkedin.com/in/rafael-marchiote-567926266" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
         </li>
         <li>
-          <span class="timeline-tag">DESENVOLVIMENTO</span>
-          <h3>Power Platform &amp; automação</h3>
-          <p>Power Apps, Power Automate, SharePoint e SQL aplicados a soluções reais de automação de processos.</p>
+          <a href="mailto:rafael.marchiote@powerlearn.com.br">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>E-mail</span>
+          </a>
         </li>
-        <li>
-          <span class="timeline-tag">ATUAL</span>
-          <h3>Agentes de IA &amp; integrações</h3>
-          <p>n8n, Claude Code e agentes de IA que executam tarefas de ponta a ponta, integrando sistemas via API.</p>
+        <li class="plain">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Natividade, Rio de Janeiro</span>
         </li>
-      </ol>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="section wrap">
-      <div class="section-heading">
-        <h2>Contato</h2>
-      </div>
-
-      <dl class="contact-grid">
-        <div class="contact-item">
-          <dt>NOME</dt>
-          <dd>Rafael Marchiote</dd>
-        </div>
-        <div class="contact-item">
-          <dt>FUNÇÃO</dt>
-          <dd>Desenvolvedor de Software &amp; Automação</dd>
-        </div>
-        <div class="contact-item">
-          <dt>E-MAIL</dt>
-          <dd><a href="mailto:rafael.marchiote@powerlearn.com.br">rafael.marchiote@powerlearn.com.br</a></dd>
-        </div>
-        <div class="contact-item">
-          <dt>GITHUB</dt>
-          <dd><a href="https://github.com/Marchiote98" target="_blank" rel="noopener">Marchiote98</a></dd>
-        </div>
-        <div class="contact-item">
-          <dt>LINKEDIN</dt>
-          <dd><a href="https://www.linkedin.com/in/rafael-marchiote-567926266" target="_blank" rel="noopener">rafael-marchiote-567926266</a></dd>
-        </div>
-        <div class="contact-item">
-          <dt>LOCAL</dt>
-          <dd>Natividade, Rio de Janeiro</dd>
-        </div>
-      </dl>
-    </section>
-  </main>
-
-  <footer class="site-footer wrap">
-    <p>// feito em html/css · sem build · deploy: github pages</p>
-  </footer>
+      </ul>
+    </aside>
+  </div>
 
 </body>
 </html>
