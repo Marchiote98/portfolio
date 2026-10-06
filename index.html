@@ -73,6 +73,25 @@
         <h2>Projetos</h2>
 
         <div class="project-grid">
+          <article class="project-card c-mint wide">
+            <div class="card-top">
+              <span class="icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="3"/><line x1="12" y1="4" x2="12" y2="8"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/><line x1="2" y1="13" x2="2" y2="16"/><line x1="22" y1="13" x2="22" y2="16"/></svg>
+              </span>
+              <span class="status live">Em produção</span>
+            </div>
+            <h3>Agente de IA de Atendimento e Agendamento (WhatsApp)</h3>
+            <p class="project-desc">Agente que atende pacientes no WhatsApp 24h: tira dúvidas, entende áudio, consulta a agenda real dos profissionais e marca, remarca ou cancela consultas sozinho. Quando o caso pede, passa a conversa pra equipe humana e fica pausado até ela devolver. A primeira versão roda em n8n (orquestração com fallback entre modelos de IA, memória por conversa e trava contra marcação duplicada). Agora estou migrando o agente pra uma arquitetura própria em código num servidor Linux: o agente roda como serviço, com transcrição de áudio local, integração direta com o Google Calendar e uma bateria de testes de segurança antes de cada liberação.</p>
+            <div class="tag-row">
+              <span class="tag">n8n</span>
+              <span class="tag">Python</span>
+              <span class="tag">WhatsApp Cloud API</span>
+              <span class="tag">Google Calendar API</span>
+              <span class="tag">Redis</span>
+              <span class="tag">LLM</span>
+            </div>
+          </article>
+
           <article class="project-card c-peach">
             <div class="card-top">
               <span class="icon-box" aria-hidden="true">
@@ -144,7 +163,7 @@
               <span class="icon-box" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
               </span>
-              <span class="status live">Em produção</span>
+              <span class="status">Concluído</span>
             </div>
             <h3>Plataforma de Gestão de Solicitações de Comunicação</h3>
             <p class="project-desc">App canvas com triagem por tipo de solicitação, fluxo de decisão/aprovação e notificações automáticas por e-mail, interface bilíngue (PT/EN) e chat integrado no próprio app pra comunicação direta entre solicitante e equipe.</p>
@@ -164,7 +183,7 @@
         <div class="stack-card">
           <div class="stack-row">
             <span class="stack-label">Automação &amp; integração</span>
-            <span class="chips"><span class="tag">n8n</span><span class="tag">Power Automate</span><span class="tag">Webhooks</span><span class="tag">SharePoint</span></span>
+            <span class="chips"><span class="tag">n8n</span><span class="tag">Power Automate</span><span class="tag">Webhooks</span><span class="tag">SharePoint</span><span class="tag">WhatsApp Cloud API</span><span class="tag">Google APIs</span></span>
           </div>
           <div class="stack-row">
             <span class="stack-label">Low-code &amp; apps</span>
@@ -172,7 +191,11 @@
           </div>
           <div class="stack-row">
             <span class="stack-label">Linguagens &amp; dados</span>
-            <span class="chips"><span class="tag">SQL</span><span class="tag">C#</span><span class="tag">JavaScript</span><span class="tag">Python</span></span>
+            <span class="chips"><span class="tag">SQL</span><span class="tag">C#</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span></span>
+          </div>
+          <div class="stack-row">
+            <span class="stack-label">Infra</span>
+            <span class="chips"><span class="tag">Linux</span><span class="tag">systemd</span><span class="tag">VPS</span></span>
           </div>
           <div class="stack-row">
             <span class="stack-label">IA &amp; agentes</span>
