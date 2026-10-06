@@ -339,3 +339,15 @@ main { display: flex; flex-direction: column; gap: 44px; min-width: 0; }
   .stack-card { padding: 4px 18px; }
   .stack-row { grid-template-columns: 1fr; gap: 8px; }
 }
+
+/* METODO */
+.method-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.method-item { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
+.method-item h3 { font-size: 16px; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
+.method-item h3::before { content: ""; width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.method-item:nth-child(1) h3::before { background: var(--peach); }
+.method-item:nth-child(2) h3::before { background: var(--mint); }
+.method-item:nth-child(3) h3::before { background: var(--sky); }
+.method-item:nth-child(4) h3::before { background: var(--brand); }
+.method-item p { color: var(--ink-soft); font-size: 14.5px; margin: 0; }
+@media (max-width: 640px) { .method-grid { grid-template-columns: 1fr; } }
