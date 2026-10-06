@@ -82,13 +82,13 @@
               <span class="status live">Em produção</span>
             </div>
             <h3>Agentes de IA - Assistente Virtual</h3>
-            <p class="project-desc">Agente que atende pacientes no WhatsApp 24h: tira dúvidas, entende áudio, consulta a agenda real dos profissionais e marca, remarca ou cancela consultas sozinho. Quando o caso pede, passa a conversa pra equipe humana e fica pausado até ela devolver. A primeira versão roda em n8n (orquestração com fallback entre modelos de IA, memória por conversa e trava contra marcação duplicada). Agora estou migrando o agente pra uma arquitetura própria em código num servidor Linux: o agente roda como serviço, com transcrição de áudio local, integração direta com o Google Calendar e uma bateria de testes de segurança antes de cada liberação.</p>
+            <p class="project-desc">Agentes de IA que trabalham pela empresa inteira, não só no atendimento. Eles conversam entre si numa camada compartilhada (o que um descobre chega no outro), operam onde o time já trabalha, com agenda, e-mail, tarefas, planilhas, documentos e mensageiros, e executam tarefas reais de ponta a ponta, sempre com a pessoa aprovando o que sai pra fora. A mesma base atende o cliente final: assistentes no WhatsApp que tiram dúvidas, entendem áudio, consultam a agenda e marcam, remarcam ou cancelam consultas sozinhos, e passam a conversa pra equipe humana quando o caso pede. Hoje estou levando esses agentes do n8n pra uma arquitetura própria em código, rodando como serviço num servidor Linux.</p>
             <div class="tag-row">
+              <span class="tag">Claude Code</span>
               <span class="tag">n8n</span>
               <span class="tag">Python</span>
               <span class="tag">WhatsApp Cloud API</span>
-              <span class="tag">Google Calendar API</span>
-              <span class="tag">Redis</span>
+              <span class="tag">Google APIs</span>
               <span class="tag">LLM</span>
             </div>
           </article>
